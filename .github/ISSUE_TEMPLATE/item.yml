@@ -1,0 +1,22 @@
+
+name: Item
+description: Beschrijf het backlog item
+title: Item titel
+type: Item
+body:
+body:
+  - type: textarea
+    id: itemomschrijving
+    attributes:
+      label: Beschrijving
+      placeholder: Geef een toelichting en/of gebruik plaatjes/schetsen om het werk te verduidelijken
+    validations:
+      required: false
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      description: Hoeveel dagdelen of uren denk je nodig te hebben voor deze Spike?
+    validations:
+      required: true
+

@@ -1,0 +1,39 @@
+
+name: Taak
+description: Beschrijf de Taak
+title: Taaktitel
+type: Taak
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Type Product
+  - type: textarea
+    id: taakomschrijving
+    attributes:
+      label: Beschrijving
+      placeholder: Geef eventueel een toelichting  
+    validations:
+      required: false
+  - type: dropdown
+    id: type-taak
+    attributes:
+      label: Type Taak
+      options:
+        - Oriënteren/Verzamelen
+        - Ordenen
+        - Uitwerken
+        - Evalueren
+        - Integreren
+        - Documenteren
+    validations:
+      required: true
+  - type: dropdown
+    id: groep-individueel
+    attributes:
+      label: Individuele taak, of groepstaak 
+      options:
+        - Individueel
+        - Groep
+    validations:
+      required: true

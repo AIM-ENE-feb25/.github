@@ -1,0 +1,29 @@
+name: Spike
+description: Beschrijf de Spike
+title: Onderzoeksvraag, of onderzoeksdoel
+type: Spike
+body:
+  - type: textarea
+    id: onderzoek
+    attributes:
+      label: Beschrijving
+      placeholder: Geef een toelichting en/of gebruik plaatjes/schetsen om het probleem te verduidelijken
+    validations:
+      required: false
+  - type: dropdown
+    id: type-onzekerheid
+    attributes:
+      label: Type Onzekerheid
+      options:
+        - Functioneel
+        - Technisch
+        - Kennis
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      description: Hoeveel dagdelen of uren denk je nodig te hebben voor deze Spike?
+    validations:
+      required: true
